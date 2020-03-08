@@ -1,0 +1,102 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"  ;
+
+:root{
+    --color-green:#50fa7b; 
+    --color-rocket:#7159c1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+body {
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    
+}
+header{
+    background-color: var(--color-rocket);
+    padding: 40px;
+    width: 100%;
+}
+.cards{
+    max-width: 1088px;
+    gap: 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 200px;
+    
+}
+
+.card{
+    padding-top: 20px;
+    background-color: rgb(113,89,193, 0.5);
+    text-align: center;
+    border-radius: 60px;
+    width: 336px;
+    height: 400px;
+}
+.card-image img{
+    padding-top: 50px;
+}
+
+.card-modulos{
+    padding: 40px;
+    font-size: 20px;
+}
+.card-price{
+    background-color: var(--color-rocket);
+    padding: 10px 40px;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    filter: brightness(90%);
+    font-size: 20px;
+    margin: auto;
+    color: white;
+}
+
+.modal-overlay{
+    background-color: rgba(0, 0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0; 
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+    width: 70%;
+    height: 90%;
+    margin: 6vh auto;
+    position: relative;
+}
+
+.modal .close-modal{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
